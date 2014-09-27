@@ -1,12 +1,21 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Enterpriseape</title>
+  <title>Enterprise Ape</title>
   <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
   <%= csrf_meta_tags %>
 </head>
 <body>
+
+<%= link_to "Home", root_path %>
+<%= link_to "About Us", static_about_path %>
+<%= link_to "Contact", static_contact_path %>
+<%= link_to "Features", static_features_path %>
+<%= link_to "FAQ's", static_faq_path %>
+<%= link_to "Pricing", static_pricing_path %>
+<%= link_to "Invoices", invoices_path %>
+<%= link_to "Login", root_path %>
 
 <%= yield %>
 
