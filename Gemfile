@@ -34,3 +34,6 @@ gem 'spring',        group: :development
 gem 'bootstrap-sass', '~> 3.2.0'
 
 gem 'devise'
+
+#Added to clean up logs
+gem 'quiet_assets', :group => :development
