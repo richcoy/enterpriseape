@@ -33,7 +33,7 @@
     <div class="form-group">
       <%= f.label :salesperson, class: 'control-label' %><br>
        <div class="controls">
-        <%= f.text_field :salesperson, class: 'form-control' %>
+        <%= collection_select( :invoice, :employee_id, Employee.all, :id, :name, {}, { :multiple => false }) %>
       </div>
     </div>
     <div class="form-group">
